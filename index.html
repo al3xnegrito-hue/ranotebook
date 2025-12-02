@@ -18,12 +18,13 @@
 </head>
 <body>
   <div class="app-shell">
+    <!-- HEADER -->
     <header class="site-header" id="top">
       <div class="site-header__inner">
         <div class="brand">
           <a href="#inicio" class="brand__logo">
             <img
-              src="../assets/logos/logo.png"
+              src="assets/logos/logo.png"
               alt="Logo RA Notebook"
               class="brand__logo-img"
             />
@@ -41,7 +42,7 @@
 
           <ul class="nav__list" id="navList">
             <li><a href="#plataforma" class="nav__link">Plataforma</a></li>
-            <li><a href="#materias" class="nav__link">Materias</a></li>
+            <li><a href="#materias" class="nav__link">Materias / PDFs</a></li>
             <li><a href="#planes" class="nav__link">Planes</a></li>
             <li><a href="#demo" class="nav__link">Video demo</a></li>
             <li><a href="#faqs" class="nav__link">FAQ</a></li>
@@ -56,6 +57,7 @@
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero" id="inicio">
         <div class="hero__content">
           <p class="hero__eyebrow">Plataforma web · UADY</p>
@@ -69,7 +71,7 @@
           </p>
 
           <div class="hero__actions">
-            <a href="#materias" class="btn btn--primary">Ver lista de materias</a>
+            <a href="#materias" class="btn btn--primary">Ver materias y PDFs</a>
             <a href="#demo" class="btn btn--secondary">Ver video de la plataforma</a>
           </div>
         </div>
@@ -79,8 +81,8 @@
             <h2 class="hero-card__title">RA Notebook en pocas palabras</h2>
             <ul class="hero-card__list">
               <li>✅ Banco digital de apuntes, exámenes y resúmenes.</li>
-              <li>📂 Todo organizado por materia y periodo.</li>
-              <li>🔐 Acceso seguro y validado por la comunidad estudiantil.</li>
+              <li>📂 Todo organizado por materia.</li>
+              <li>🔐 Acceso orientado a estudiantes de la UADY.</li>
               <li>🤝 Enfoque en mejorar el rendimiento académico del campus.</li>
             </ul>
 
@@ -93,6 +95,7 @@
         </div>
       </section>
 
+      <!-- SOBRE LA PLATAFORMA -->
       <section class="section section--about" id="plataforma">
         <div class="section__header">
           <h2 class="section__title">Una biblioteca digital colaborativa</h2>
@@ -132,180 +135,150 @@
         </div>
       </section>
 
+      <!-- MATERIAS + PDFs (ESTÁTICO, SIN BOTONES) -->
       <section class="section section--careers" id="materias">
         <div class="section__header">
-          <h2 class="section__title">Lista de materias</h2>
+          <h2 class="section__title">Materias y archivos disponibles</h2>
           <p class="section__subtitle">
-            Al seleccionar una materia, verás los apuntes y PDFs que tengas guardados para ella.
+            Navega por las materias y abre directamente los PDFs y documentos disponibles.
+            Haz clic en cualquier archivo para verlo o descargarlo.
           </p>
         </div>
 
         <div class="subjects-layout">
-          <div class="subjects-grid" id="subjectsGrid">
-            <article class="subject-card" data-subject="Probabilidad y Estadistica">
+          <div class="subjects-grid subjects-grid--static">
+            <!-- Probabilidad y Estadística -->
+            <article class="subject-card">
               <h3>Probabilidad y Estadística</h3>
               <p>Fundamentos estadísticos aplicados a procesos, datos y experimentación.</p>
-              <button class="btn btn--small subject-btn" data-subject="Probabilidad y Estadistica">
-                Ver apuntes
-              </button>
+              <ul class="subject-files">
+                <li>
+                  <a href="pdfs/Probabilidad y Estadistica/EstadisticaAplicada.pdf" target="_blank">
+                    EstadisticaAplicada.pdf
+                  </a>
+                </li>
+              </ul>
             </article>
 
-            <article class="subject-card" data-subject="Quimica General">
+            <!-- Química General -->
+            <article class="subject-card">
               <h3>Química General</h3>
               <p>Fundamentos de química para el análisis y diseño de procesos.</p>
-              <button class="btn btn--small subject-btn" data-subject="Quimica General">
-                Ver apuntes
-              </button>
+              <ul class="subject-files">
+                <li>
+                  <a href="pdfs/Quimica General/Tema 1. Periodicidad Quimica.pdf" target="_blank">
+                    Tema 1. Periodicidad Quimica
+                  </a>
+                </li>
+                <li>
+                  <a href="pdfs/Quimica General/Tema 2. Numeros Cuanticos.pdf" target="_blank">
+                    Tema 2. Numeros Cuanticos
+                  </a>
+                </li>
+                <li>
+                  <a href="pdfs/Quimica General/Tema 3. Enlace quimico.pdf" target="_blank">
+                    Tema 3. Enlace quimico
+                  </a>
+                </li>
+                <li>
+                  <a href="pdfs/Quimica General/Tema 4. Nomenclatura inorganica.pdf" target="_blank">
+                    Tema 4. Nomenclatura inorganica
+                  </a>
+                </li>
+                <li>
+                  <a href="pdfs/Quimica General/Tema 5. Estequiometria.pdf" target="_blank">
+                    Tema 5. Estequiometria
+                  </a>
+                </li>
+                <li>
+                  <a href="pdfs/Quimica General/2a prueba de desempeño.pdf" target="_blank">
+                    2a prueba de desempeño
+                  </a>
+                </li>
+                <li>
+                  <a href="pdfs/Quimica General/Doc1.pdf" target="_blank">
+                    Doc1
+                  </a>
+                </li>
+                <li>
+                  <a href="pdfs/Quimica General/Ejercicios nomenclatura inorgánica.pdf" target="_blank">
+                    Ejercicios nomenclatura inorgánica
+                  </a>
+                </li>
+                <li>
+                  <a href="pdfs/Quimica General/III. Número de oxidación.pdf" target="_blank">
+                    III. Número de oxidación
+                  </a>
+                </li>
+                <li>
+                  <a href="pdfs/Quimica General/IUPAC_Periodic_Table_Z y A.pdf" target="_blank">
+                    IUPAC_Periodic_Table_Z y A
+                  </a>
+                </li>
+                <li>
+                  <a href="pdfs/Quimica General/IUPAC_Periodic_Table-04May22_CRA.pdf" target="_blank">
+                    IUPAC_Periodic_Table-04May22_CRA
+                  </a>
+                </li>
+              </ul>
             </article>
 
-            <article class="subject-card" data-subject="Sustentabilidad en Ingenieria">
-              <h3>Sustentabilidad en Ingeniería</h3>
-              <p>Enfoques y herramientas para un desarrollo sostenible en proyectos de ingeniería.</p>
-              <button class="btn btn--small subject-btn" data-subject="Sustentabilidad en Ingenieria">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Calculo Diferencial">
+            <!-- Cálculo Diferencial -->
+            <article class="subject-card">
               <h3>Cálculo Diferencial</h3>
               <p>Derivadas, límites y aplicaciones en problemas reales de ingeniería.</p>
-              <button class="btn btn--small subject-btn" data-subject="Calculo Diferencial">
-                Ver apuntes
-              </button>
+              <ul class="subject-files">
+                <li><a href="pdfs/Calculo Diferencial/Funciones.pdf" target="_blank">Funciones.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/Integrales-indefinidas-resueltas.pdf" target="_blank">Integrales-indefinidas-resueltas.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/Int-IIL_Proyecto final_539ff5658d0fb8b8412de43e37eae886.docx" target="_blank">Int-IIL_Proyecto final (docx)</a></li>
+                <li><a href="pdfs/Calculo Diferencial/James_Stewart_Precalculo_matematicas_par.pdf" target="_blank">James_Stewart_Precalculo_matematicas_par.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/LARSON.pdf" target="_blank">LARSON.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/Notas de cálculo diferencial.pdf" target="_blank">Notas de cálculo diferencial.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/Notas de Calculo Diferencial_eb22b73fc69884c07c1b46cc4bebaeb8.pdf" target="_blank">Notas de Calculo Diferencial (2).pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/Parcial1_CD_Ago_2023_A_c6bb22380a153932917b8fe428a8e3e3.pdf" target="_blank">Parcial1_CD_Ago_2023_A.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/Parcial2_CD_Ago_2023_A_47867b2782ad819e8890fee9746a6adb.pdf" target="_blank">Parcial2_CD_Ago_2023_A.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/precalculo-7-edicion (1).pdf" target="_blank">precalculo-7-edicion (1).pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/1-Modelado-de-funciones.pdf" target="_blank">1-Modelado-de-funciones.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/5.pdf" target="_blank">5.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/100derivadasresueltasyosoytuprofe.pdf" target="_blank">100derivadasresueltasyosoytuprofe.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/Calculo I Serge Lang.pdf" target="_blank">Calculo I Serge Lang.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/calculo_ayres.pdf" target="_blank">calculo_ayres.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/calculo-diferencial-e-integral-tomo1-n-piskunov.pdf" target="_blank">calculo-diferencial-e-integral-tomo1-n-piskunov.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/calculo-james-stewart-7ed.pdf" target="_blank">calculo-james-stewart-7ed.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/ccc.pdf" target="_blank">ccc.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/CuadernoCalculoDiferencial_2237ab9ba2a5c50505fa6c7aded5be2d.pdf" target="_blank">CuadernoCalculoDiferencial_1.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/CuadernoCalculoDiferencial_b2faa38259fcfb325e89225cc3a9e66b.pdf" target="_blank">CuadernoCalculoDiferencial_2.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/desigualdades lineales modelacion.pdf" target="_blank">desigualdades lineales modelacion.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/ejercicio con desigualdades.pdf" target="_blank">ejercicio con desigualdades.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/Ejercicios de derivadas2.pdf" target="_blank">Ejercicios de derivadas2.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/EJERCICIOS RESUELTOS TRIGO TRES MAXIMOS Y MINIMOS (1).pdf" target="_blank">EJERCICIOS RESUELTOS TRIGO....pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/ejerciciosderivacion.pdf" target="_blank">ejerciciosderivacion.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/examen-derivadas.pdf" target="_blank">examen-derivadas.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/expresar  funciones.pdf" target="_blank">expresar funciones.pdf</a></li>
+                <li><a href="pdfs/Calculo Diferencial/formulario.pdf" target="_blank">formulario.pdf</a></li>
+              </ul>
             </article>
 
-            <article class="subject-card" data-subject="Investigacion de Operaciones 1">
-              <h3>Investigación de Operaciones 1</h3>
-              <p>Modelos de optimización y herramientas de análisis para la toma de decisiones.</p>
-              <button class="btn btn--small subject-btn" data-subject="Investigacion de Operaciones 1">
-                Ver apuntes
-              </button>
+            <!-- OTRAS MATERIAS SIN CONTENIDO (PLACEHOLDER) -->
+            <article class="subject-card">
+              <h3>Sustentabilidad en Ingeniería</h3>
+              <p>Enfoques y herramientas para un desarrollo sostenible en proyectos de ingeniería.</p>
+              <div class="subject-empty">
+                <img
+                  src="assets/imagenes/sin-contenido.png.png"
+                  alt="Sin contenido aún"
+                  class="subject-panel__empty-img"
+                />
+                <p>Por el momento no hay archivos cargados para esta materia.</p>
+              </div>
             </article>
 
-            <article class="subject-card" data-subject="Programacion para Ingenieria">
-              <h3>Programación para Ingeniería</h3>
-              <p>Herramientas de programación aplicadas a problemas de ingeniería.</p>
-              <button class="btn btn--small subject-btn" data-subject="Programacion para Ingenieria">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Seguridad e Higiene Industrial">
-              <h3>Seguridad e Higiene Industrial</h3>
-              <p>Gestión de riesgos, normas y buenas prácticas en entornos productivos.</p>
-              <button class="btn btn--small subject-btn" data-subject="Seguridad e Higiene Industrial">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Termodinamica">
-              <h3>Termodinámica</h3>
-              <p>Principios termodinámicos enfocados a procesos industriales y energéticos.</p>
-              <button class="btn btn--small subject-btn" data-subject="Termodinamica">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Algebra Lineal">
-              <h3>Álgebra Lineal</h3>
-              <p>Espacios vectoriales, matrices y aplicaciones en ingeniería.</p>
-              <button class="btn btn--small subject-btn" data-subject="Algebra Lineal">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Balance de Materia y Energia">
-              <h3>Balance de Materia y Energía</h3>
-              <p>Cálculos de entradas, salidas y acumulaciones en sistemas de proceso.</p>
-              <button class="btn btn--small subject-btn" data-subject="Balance de Materia y Energia">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Calculo Integral">
-              <h3>Cálculo Integral</h3>
-              <p>Integrales y aplicaciones en balances, áreas y volúmenes.</p>
-              <button class="btn btn--small subject-btn" data-subject="Calculo Integral">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Cultura Emprendedora">
-              <h3>Cultura Emprendedora</h3>
-              <p>Desarrollo de ideas, proyectos y modelos de negocio en el contexto de ingeniería.</p>
-              <button class="btn btn--small subject-btn" data-subject="Cultura Emprendedora">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Economia para Ingenieros">
-              <h3>Economía para Ingenieros</h3>
-              <p>Análisis económico y financiero aplicado a proyectos de ingeniería.</p>
-              <button class="btn btn--small subject-btn" data-subject="Economia para Ingenieros">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Etica Profesional">
-              <h3>Ética Profesional</h3>
-              <p>Responsabilidad social y profesional en el ejercicio de la ingeniería.</p>
-              <button class="btn btn--small subject-btn" data-subject="Etica Profesional">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Fisica General">
-              <h3>Física General</h3>
-              <p>Fundamentos de mecánica, ondas y otros fenómenos físicos.</p>
-              <button class="btn btn--small subject-btn" data-subject="Fisica General">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Ing de Envase y Embalaje">
-              <h3>Ingeniería de Envase y Embalaje</h3>
-              <p>Diseño, selección y análisis de materiales para envases y embalajes.</p>
-              <button class="btn btn--small subject-btn" data-subject="Ing de Envase y Embalaje">
-                Ver apuntes
-              </button>
-            </article>
-
-            <article class="subject-card" data-subject="Ing de Materiales">
-              <h3>Ingeniería de Materiales</h3>
-              <p>Propiedades, selección y comportamiento de materiales en aplicaciones de ingeniería.</p>
-              <button class="btn btn--small subject-btn" data-subject="Ing de Materiales">
-                Ver apuntes
-              </button>
-            </article>
+            <!-- Puedes duplicar este bloque para más materias vacías -->
           </div>
-
-          <aside class="subject-panel" id="subjectPanel">
-            <div class="subject-panel__empty" id="subjectPanelEmpty">
-              <img
-                src="../assets/imagenes/sin-contenido.png.png"
-                alt="Por el momento no hay contenido en esta materia"
-                class="subject-panel__empty-img"
-              />
-              <p class="subject-panel__empty-text">
-                Por el momento no hay apuntes cargados para esta materia.
-                Cuando se agreguen, aparecerán aquí como enlaces. ✨
-              </p>
-            </div>
-
-            <div class="subject-panel__content is-hidden" id="subjectPanelContent">
-              <h3 class="subject-panel__title" id="subjectPanelTitle">
-                Nombre de la materia
-              </h3>
-              <p class="subject-panel__description" id="subjectPanelDescription">
-                Aquí verás la descripción y enlaces a apuntes, exámenes y guías.
-              </p>
-
-              <ul class="resource-list" id="subjectResourcesList"></ul>
-            </div>
-          </aside>
         </div>
       </section>
 
+      <!-- PLANES -->
       <section class="section section--plans" id="planes">
         <div class="section__header">
           <h2 class="section__title">Modelo de suscripción simple</h2>
@@ -341,6 +314,7 @@
         </div>
       </section>
 
+      <!-- VIDEO DEMO -->
       <section class="section section--video" id="demo">
         <div class="section__header">
           <h2 class="section__title">Video demo de RA Notebook</h2>
@@ -351,12 +325,13 @@
 
         <div class="video-frame">
           <video class="video-frame__player" controls preload="metadata">
-            <source src="../media/videos/video promocional.mp4" type="video/mp4" />
+            <source src="media/videos/video promocional.mp4" type="video/mp4" />
             Tu navegador no soporta la reproducción de video.
           </video>
         </div>
       </section>
 
+      <!-- FAQ -->
       <section class="section section--faq" id="faqs">
         <div class="section__header">
           <h2 class="section__title">Preguntas frecuentes</h2>
@@ -399,6 +374,7 @@
         </div>
       </section>
 
+      <!-- CONTACTO -->
       <section class="section section--contact" id="contacto">
         <div class="section__header">
           <h2 class="section__title">Contacto</h2>
@@ -441,13 +417,14 @@
             </button>
 
             <p class="form-note">
-              *Este formulario es de demostración. Más adelante se puede conectar con WhatsApp, correo o cualquier otro canal real.
+              *Este formulario es de demostración. Más adelante se puede conectar con WhatsApp, correo u otro canal real.
             </p>
           </form>
         </div>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="site-footer">
       <p class="site-footer__text">
         RA Notebook · Banco académico digital para la UADY ·
