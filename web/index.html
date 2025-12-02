@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RA Notebook · Banco académico digital UADY</title>
+  <meta
+    name="description"
+    content="RA Notebook es un banco académico digital creado por y para estudiantes de la UADY. Apuntes, exámenes y material de estudio organizado por materia."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header" id="top">
+      <div class="site-header__inner">
+        <div class="brand">
+          <a href="#inicio" class="brand__logo">
+            <img
+              src="../assets/logos/logo.png"
+              alt="Logo RA Notebook"
+              class="brand__logo-img"
+            />
+            <span class="brand__text">
+              <span class="brand__title">RA Notebook</span>
+              <span class="brand__subtitle">Banco académico UADY</span>
+            </span>
+          </a>
+        </div>
+
+        <nav class="nav">
+          <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+
+          <ul class="nav__list" id="navList">
+            <li><a href="#plataforma" class="nav__link">Plataforma</a></li>
+            <li><a href="#materias" class="nav__link">Materias</a></li>
+            <li><a href="#planes" class="nav__link">Planes</a></li>
+            <li><a href="#demo" class="nav__link">Video demo</a></li>
+            <li><a href="#faqs" class="nav__link">FAQ</a></li>
+            <li><a href="#contacto" class="nav__link">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn btn--ghost header-cta">
+          Solicitar información
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Plataforma web · UADY</p>
+          <h1 class="hero__title">
+            Banco académico digital
+            <span>creado por estudiantes, para estudiantes.</span>
+          </h1>
+          <p class="hero__subtitle">
+            Centraliza apuntes, exámenes anteriores y material de estudio de distintas materias
+            de las ingenierías del campus, en un solo lugar.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#materias" class="btn btn--primary">Ver lista de materias</a>
+            <a href="#demo" class="btn btn--secondary">Ver video de la plataforma</a>
+          </div>
+        </div>
+
+        <div class="hero__panel">
+          <div class="hero-card">
+            <h2 class="hero-card__title">RA Notebook en pocas palabras</h2>
+            <ul class="hero-card__list">
+              <li>✅ Banco digital de apuntes, exámenes y resúmenes.</li>
+              <li>📂 Todo organizado por materia y periodo.</li>
+              <li>🔐 Acceso seguro y validado por la comunidad estudiantil.</li>
+              <li>🤝 Enfoque en mejorar el rendimiento académico del campus.</li>
+            </ul>
+
+            <div class="hero-card__status">
+              <span class="status-badge status-badge--pilot">
+                MVP en construcción · Lanzamiento estimado: 6–9 meses
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--about" id="plataforma">
+        <div class="section__header">
+          <h2 class="section__title">Una biblioteca digital colaborativa</h2>
+          <p class="section__subtitle">
+            RA Notebook es un banco académico digital que evoluciona con el tiempo:
+            la comunidad sube, valida y mantiene actualizados los materiales
+            para que estudiar sea más eficiente y menos caótico.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>Organizado por materia</h3>
+            <p>
+              Apuntes, exámenes anteriores y resúmenes clasificados por materia,
+              para que encuentres rápido lo que necesitas.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h3>Autonomía de la comunidad</h3>
+            <p>
+              Son los mismos estudiantes quienes alimentan la plataforma con
+              apuntes y exámenes antiguos, manteniendo el contenido vivo y
+              alineado a la realidad de cada grupo.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h3>Confiabilidad académica</h3>
+            <p>
+              Períodos de prueba, retroalimentación y filtros básicos
+              ayudan a garantizar que los materiales sean útiles,
+              claros y académicamente sólidos.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--careers" id="materias">
+        <div class="section__header">
+          <h2 class="section__title">Lista de materias</h2>
+          <p class="section__subtitle">
+            Al seleccionar una materia, verás los apuntes y PDFs que tengas guardados para ella.
+          </p>
+        </div>
+
+        <div class="subjects-layout">
+          <div class="subjects-grid" id="subjectsGrid">
+            <article class="subject-card" data-subject="Probabilidad y Estadistica">
+              <h3>Probabilidad y Estadística</h3>
+              <p>Fundamentos estadísticos aplicados a procesos, datos y experimentación.</p>
+              <button class="btn btn--small subject-btn" data-subject="Probabilidad y Estadistica">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Quimica General">
+              <h3>Química General</h3>
+              <p>Fundamentos de química para el análisis y diseño de procesos.</p>
+              <button class="btn btn--small subject-btn" data-subject="Quimica General">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Sustentabilidad en Ingenieria">
+              <h3>Sustentabilidad en Ingeniería</h3>
+              <p>Enfoques y herramientas para un desarrollo sostenible en proyectos de ingeniería.</p>
+              <button class="btn btn--small subject-btn" data-subject="Sustentabilidad en Ingenieria">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Calculo Diferencial">
+              <h3>Cálculo Diferencial</h3>
+              <p>Derivadas, límites y aplicaciones en problemas reales de ingeniería.</p>
+              <button class="btn btn--small subject-btn" data-subject="Calculo Diferencial">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Investigacion de Operaciones 1">
+              <h3>Investigación de Operaciones 1</h3>
+              <p>Modelos de optimización y herramientas de análisis para la toma de decisiones.</p>
+              <button class="btn btn--small subject-btn" data-subject="Investigacion de Operaciones 1">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Programacion para Ingenieria">
+              <h3>Programación para Ingeniería</h3>
+              <p>Herramientas de programación aplicadas a problemas de ingeniería.</p>
+              <button class="btn btn--small subject-btn" data-subject="Programacion para Ingenieria">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Seguridad e Higiene Industrial">
+              <h3>Seguridad e Higiene Industrial</h3>
+              <p>Gestión de riesgos, normas y buenas prácticas en entornos productivos.</p>
+              <button class="btn btn--small subject-btn" data-subject="Seguridad e Higiene Industrial">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Termodinamica">
+              <h3>Termodinámica</h3>
+              <p>Principios termodinámicos enfocados a procesos industriales y energéticos.</p>
+              <button class="btn btn--small subject-btn" data-subject="Termodinamica">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Algebra Lineal">
+              <h3>Álgebra Lineal</h3>
+              <p>Espacios vectoriales, matrices y aplicaciones en ingeniería.</p>
+              <button class="btn btn--small subject-btn" data-subject="Algebra Lineal">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Balance de Materia y Energia">
+              <h3>Balance de Materia y Energía</h3>
+              <p>Cálculos de entradas, salidas y acumulaciones en sistemas de proceso.</p>
+              <button class="btn btn--small subject-btn" data-subject="Balance de Materia y Energia">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Calculo Integral">
+              <h3>Cálculo Integral</h3>
+              <p>Integrales y aplicaciones en balances, áreas y volúmenes.</p>
+              <button class="btn btn--small subject-btn" data-subject="Calculo Integral">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Cultura Emprendedora">
+              <h3>Cultura Emprendedora</h3>
+              <p>Desarrollo de ideas, proyectos y modelos de negocio en el contexto de ingeniería.</p>
+              <button class="btn btn--small subject-btn" data-subject="Cultura Emprendedora">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Economia para Ingenieros">
+              <h3>Economía para Ingenieros</h3>
+              <p>Análisis económico y financiero aplicado a proyectos de ingeniería.</p>
+              <button class="btn btn--small subject-btn" data-subject="Economia para Ingenieros">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Etica Profesional">
+              <h3>Ética Profesional</h3>
+              <p>Responsabilidad social y profesional en el ejercicio de la ingeniería.</p>
+              <button class="btn btn--small subject-btn" data-subject="Etica Profesional">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Fisica General">
+              <h3>Física General</h3>
+              <p>Fundamentos de mecánica, ondas y otros fenómenos físicos.</p>
+              <button class="btn btn--small subject-btn" data-subject="Fisica General">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Ing de Envase y Embalaje">
+              <h3>Ingeniería de Envase y Embalaje</h3>
+              <p>Diseño, selección y análisis de materiales para envases y embalajes.</p>
+              <button class="btn btn--small subject-btn" data-subject="Ing de Envase y Embalaje">
+                Ver apuntes
+              </button>
+            </article>
+
+            <article class="subject-card" data-subject="Ing de Materiales">
+              <h3>Ingeniería de Materiales</h3>
+              <p>Propiedades, selección y comportamiento de materiales en aplicaciones de ingeniería.</p>
+              <button class="btn btn--small subject-btn" data-subject="Ing de Materiales">
+                Ver apuntes
+              </button>
+            </article>
+          </div>
+
+          <aside class="subject-panel" id="subjectPanel">
+            <div class="subject-panel__empty" id="subjectPanelEmpty">
+              <img
+                src="../assets/imagenes/sin-contenido.png.png"
+                alt="Por el momento no hay contenido en esta materia"
+                class="subject-panel__empty-img"
+              />
+              <p class="subject-panel__empty-text">
+                Por el momento no hay apuntes cargados para esta materia.
+                Cuando se agreguen, aparecerán aquí como enlaces. ✨
+              </p>
+            </div>
+
+            <div class="subject-panel__content is-hidden" id="subjectPanelContent">
+              <h3 class="subject-panel__title" id="subjectPanelTitle">
+                Nombre de la materia
+              </h3>
+              <p class="subject-panel__description" id="subjectPanelDescription">
+                Aquí verás la descripción y enlaces a apuntes, exámenes y guías.
+              </p>
+
+              <ul class="resource-list" id="subjectResourcesList"></ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--plans" id="planes">
+        <div class="section__header">
+          <h2 class="section__title">Modelo de suscripción simple</h2>
+          <p class="section__subtitle">
+            Un plan mensual accesible para que tengas siempre a la mano los materiales que necesitas.
+          </p>
+        </div>
+
+        <div class="plans-grid">
+          <article class="plan-card plan-card--highlight">
+            <h3>Plan Estudiante</h3>
+            <p class="plan-card__price">$60 MXN / mes</p>
+            <ul class="plan-card__list">
+              <li>Acceso a apuntes por materia.</li>
+              <li>Exámenes anteriores y guías de estudio seleccionadas.</li>
+              <li>Actualizaciones constantes según el periodo.</li>
+              <li>Plataforma pensada para el campus UADY.</li>
+            </ul>
+            <a href="#contacto" class="btn btn--primary btn--full">
+              Quiero más información
+            </a>
+          </article>
+
+          <article class="plan-card">
+            <h3>Pruebas piloto</h3>
+            <p class="plan-card__price">Acceso de prueba</p>
+            <ul class="plan-card__list">
+              <li>Periodos de prueba con grupos seleccionados.</li>
+              <li>Recopilación de reseñas y retroalimentación.</li>
+              <li>Ajustes de la plataforma según las necesidades reales.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--video" id="demo">
+        <div class="section__header">
+          <h2 class="section__title">Video demo de RA Notebook</h2>
+          <p class="section__subtitle">
+            Una demostración de cómo se organiza el contenido y cómo será la experiencia de navegación dentro de la plataforma.
+          </p>
+        </div>
+
+        <div class="video-frame">
+          <video class="video-frame__player" controls preload="metadata">
+            <source src="../media/videos/video promocional.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
+      </section>
+
+      <section class="section section--faq" id="faqs">
+        <div class="section__header">
+          <h2 class="section__title">Preguntas frecuentes</h2>
+          <p class="section__subtitle">
+            Algunas dudas comunes sobre el funcionamiento y el propósito de RA Notebook.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>¿Quién puede usar RA Notebook?</h3>
+            <p>
+              Está enfocado principalmente en estudiantes de las distintas ingenierías de la UADY.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿Qué tipo de contenido se sube?</h3>
+            <p>
+              Apuntes, resúmenes, formularios, exámenes anteriores y guías de estudio.
+              No se comparten exámenes actuales ni material que viole reglas internas.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿Quién sube y valida los materiales?</h3>
+            <p>
+              La comunidad estudiantil. RA Notebook funciona como una biblioteca
+              digital colaborativa que se refuerza con la experiencia de los propios alumnos.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿Cuándo estará disponible?</h3>
+            <p>
+              El desarrollo del MVP (versión mínima funcional), pruebas piloto y
+              lanzamiento se estima entre <strong>6 y 9 meses</strong>.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--contact" id="contacto">
+        <div class="section__header">
+          <h2 class="section__title">Contacto</h2>
+          <p class="section__subtitle">
+            Déjanos un mensaje si quieres más información sobre la plataforma o las pruebas piloto.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="Tu nombre" required />
+              </div>
+
+              <div class="form-group">
+                <label for="carrera">Carrera</label>
+                <select id="carrera">
+                  <option value="">Selecciona tu carrera</option>
+                  <option value="IQ">Ingeniería Química</option>
+                  <option value="IBT">Biotecnología</option>
+                  <option value="IIL">Ing. Industrial en Logística</option>
+                  <option value="otra">Otra</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                rows="3"
+                placeholder="Quiero información sobre la plataforma, pruebas piloto, etc."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Enviar (demo)
+            </button>
+
+            <p class="form-note">
+              *Este formulario es de demostración. Más adelante se puede conectar con WhatsApp, correo o cualquier otro canal real.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__text">
+        RA Notebook · Banco académico digital para la UADY ·
+        <span id="footerYear"></span>
+      </p>
+    </footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
